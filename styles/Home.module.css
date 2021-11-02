@@ -121,9 +121,29 @@
 } */
 
 /********** MENU *************/
+
 .menu {
   margin-left: 2vw;
   margin-right: 2vw;
 }
 
+.dash_top {
+  margin-top: 5vh;
+}
+
+#dash_menu {
+  padding-top: 5vh;
+  background-color: white;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  height: 80vh;
+  list-style: none;
+} 
+
+.dash_waiting {
+  background-color: #25356b;
+  color: white;
+}
 

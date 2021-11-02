@@ -1,27 +1,16 @@
 import React, { useState } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Menu.module.css'
 
 const Menu = (props) => {
-    const [collapsed, setCollapsed] = useState(true);
-    const toggleNavbar = () => setCollapsed(!collapsed);
-
     return (
-        <div className={styles.menu}>
-            <Navbar color="faded" light className="nav column">
-                <NavbarBrand href="/" className="mr-auto">LOGO</NavbarBrand>
-                <NavbarToggler onClick={toggleNavbar} className="mr-2" />
-                <Collapse isOpen={!collapsed} navbar>
-                <Nav navbar>
-                    <NavItem>
-                    <NavLink href="/components/">Components</NavLink>
-                    </NavItem>
-                    <NavItem>
-                    <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-                    </NavItem>
-                </Nav>
-                </Collapse>
-            </Navbar>
+        <div className={styles.menu} style={{width: props.width}}>
+            {/* <button onClick={props.openSidenav}>Open</button> */}
+            <button onClick={props.closeNav}>X</button>
+                <a href="#section">Home</a>
+                <a href="#section">Services</a>
+                <a href="#section">Clients</a>
+                <a href="#section">Contact</a>
         </div>
     );
 }
