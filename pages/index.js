@@ -32,37 +32,82 @@ export default function Home(props,) {
       </Head>
       <Top />
       <main> 
-        <button onClick={openMenu}>OPEN MENU</button>
-        <Menu width={wid} closeNav={closeMenu}/>
-
-
-
-         <Row className={styles.dash_top}>
-            <Col xs={3} className="justify-content-center align-items-center" id={styles.dash_menu}>
-              test
-            </Col>
-            <Col xs={9}>
-              <Row>
-                <Col xs={3}>
+        <div className="container">
+         <div className="row g-0" className={styles.dash_top}>
+            <div className="col" >
+              <div className="justify-content-center align-items-center" id={styles.menu}>
+                <button onClick={openMenu}>OPEN MENU</button>
+                <Menu width={wid} closeNav={closeMenu}/>
+              </div>
+            </div>
+            <div className="col">
+              <div className="row g-0">
+                <div className="col">
                   <div className={styles.dash_waiting}>
-                  WAITING CANDIDATES
+                    <div className={styles.dash_waiting_text}>
+                      24
+                    </div>
+                    WAITING CANDIDATES
                   </div>
-                </Col>
-                <Col xs={3}>TOTAL APPLIED</Col>
-                <Col xs={3}>TOTAL SWIPED</Col>
-                <Col xs={3}>ACTIVE REQS</Col>
-              </Row>
-              <Row>
-                <Col>CALENDAR</Col>
-                <Col>LIKED/INCLINED</Col>
-                <Col>DEMOGRATPHIC STATS</Col>
-              </Row>
-              <Row>
-                <Col>GRAPH</Col>
-              </Row>
-            </Col>
+                </div>
+               
+                <div className="col">
+                  <div className={styles.dash_waiting_white}>
+                    <div className={styles.dash_waiting_text}>
+                      100
+                    </div>
+                    TOTAL APPLIED
+                    </div>
+                </div>
 
-         </Row>
+                <div className="col">
+                  <div className={styles.dash_waiting_white}>
+                    <div className={styles.dash_waiting_text}>
+                      100
+                    </div>
+                    TOTAL SWIPED
+                    </div>
+                </div>
+             
+
+                <div className="col">
+                  <div className={styles.dash_waiting_white}>
+                    <div className={styles.dash_waiting_text}>
+                      5
+                    </div>
+                    ACTIVE REQS
+                    </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div className="container">
+              <div className="row">
+                <div className="col">
+                  <div className={styles.calendar}>
+                    CALENDAR
+                  </div>
+                </div>
+                <div className="col">
+                <div className={styles.calendar}>
+                    CALENDAR
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+              {/* <div className="row">
+                <div className="col-3">CALENDAR</div>
+                <div className="col-3">LIKED/INCLINED</div>
+                <div className="col-3">DEMOGRATPHIC STATS</div>
+              </div>
+              <div className="row">
+                <div className="col">GRAPH</div>
+              </div> */}
+
+         </div>
+         </div>
     
       </main>
 

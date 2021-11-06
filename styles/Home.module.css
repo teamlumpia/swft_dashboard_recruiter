@@ -142,8 +142,39 @@
   list-style: none;
 } 
 
+.jsx-1161996036.col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .dash_waiting {
   background-color: #25356b;
   color: white;
+  padding: 6vh 1vw 6vh 1vw;
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 0;
+  height: 25vh;
 }
 
+.dash_waiting_white {
+  background-color: white;
+  color: black;
+  padding: 6vh 1vw 6vh 1vw;
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 0;
+  height: 25vh;
+}
+
+.dash_waiting_text {
+  font-size: 2.5rem;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.calendar {
+  margin-top: 5vh;
+  background-color: white;
+  /* height: 25vh; */
+
+}
