@@ -14,3 +14,13 @@
     flex-direction: column; 
     align-items: center;
   }
+
+  .desktop_menu_text {
+    font-size: 1.5rem;
+    font-family: 'Bebas Neue', cursive;
+    padding-bottom: 2vh;
+  }
+  
+  #closeButton {
+    margin: -1vw 0vw 0vw 21vw;
+  }
