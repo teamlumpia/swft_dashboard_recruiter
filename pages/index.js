@@ -7,7 +7,7 @@ import Dashboard from './Dashboard';
 import Link from "next/link";
 import { Container, Row, Col, Alert } from 'reactstrap';
 
-export default function Home(props,) {
+export default function Home(props) {
   const [wid, setWid] = useState('25%');
   
     const closeMenu = () => {
