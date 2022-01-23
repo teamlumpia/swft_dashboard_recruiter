@@ -5,18 +5,45 @@ export const CANDIDATES = [
     jobId: '0',
     firstName: 'Tina',
     lastName: 'Belcher',
+    pronouns: 'She/Her',
     city:'Seattle', 
     state: 'WA',
+    country: 'USA',
     imageURL: 'https://cdn.costumewall.com/wp-content/uploads/2018/09/tina-belcher.jpg',
-    keywords:  ['keyword1', 'keyword2', 'keyword3'],
-    score: 75, 
-    jobTitle:'Software Engineer',
-    jobDetails: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar ullamcorper augue at interdum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis pellentesque dictum urna, vitae euismod turpis porta non. Aenean elit mi, rutrum efficitur imperdiet non, gravida nec erat.',
+    //score: 75,    --> score should be based off of job-match
     resumePDF:'TBD', 
     swiped: '01/03/2021',
+    about_me: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    workExperience: [
+        {
+            jobTitle:'Software Engineer',
+            jobDetails: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar ullamcorper augue at interdum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis pellentesque dictum urna, vitae euismod turpis porta non. Aenean elit mi, rutrum efficitur imperdiet non, gravida nec erat.',
+            start_month: 'April',
+            start_year: '2019',
+            end_month: 'June',
+            end_year: '2021'
+        }
+    ],
+    education: [
+        {
+            school: 'University of Washington',
+            degree: 'Computer Science',
+            field_of_study: 'Science',
+            start_month: 'September',
+            start_year: '2010',
+            end_month: 'June',
+            end_year: '2015'
+        }
+    ],
+    skills: [ 'lorem', 'lorem', 'lorem', 'lorem'],
     email:'ealasagas@gmail.com',
-    matched: 0, 
-    pool: 'liked'
+    socialMedia: [''],  //twitter, facebook, personal websites, etc. -- JUST URLs
+    
+    //SEPERATE TABLE HUR
+    keywords:  ['keyword1', 'keyword2', 'keyword3'], //keyword in resume based off of job keyword (what matches?)
+    matched: ['J0','J1'], //Job IDs
+    liked: ['J0','J1','J2'],
+    disliked: ['J4', 'J5']
 },
 {   id: 'a2', 
     jobId: '0', 
