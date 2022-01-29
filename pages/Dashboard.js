@@ -5,6 +5,13 @@ import Graph from './Graph';
 import { Container, Row, Col, Alert } from 'reactstrap';
 
 const Dashboard = (props) => {
+  //fetch user client-side
+  const {user} = useUser({redirectTo: '/signin'})
+
+  //server-render loading state
+  if(!user || user.isLoggedIn === false) {
+    return <div>Loading...</div>
+  }
     return (
    <>
         <div className="container">        

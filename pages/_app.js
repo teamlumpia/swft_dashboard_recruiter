@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/globals.css'
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
+import {useRouter} from 'next/router';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -10,4 +11,5 @@ function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 
+// https://jasonwatmore.com/post/2021/08/29/next-js-basic-http-authentication-tutorial-with-example-app
 export default MyApp
